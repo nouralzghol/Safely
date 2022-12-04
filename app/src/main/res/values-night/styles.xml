@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary"> @color/Bittersweet</item>
+        <item name="colorPrimaryDark"> @color/Bittersweet</item>
+        <item name="colorAccent"> @color/Bittersweet</item>
+
+    </style>
+<!--    <style name="rounded" parent="android:">-->
+<!--        <item name=""-->
+<!--    </style>-->
+</resources>

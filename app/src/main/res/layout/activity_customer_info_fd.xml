@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Cornflower_Lilac"
+    android:onClick="onClick"
+    tools:context=".CustomerInfoFD">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CustomerInfoFD" />
+
+    <View
+        android:id="@+id/roundedRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/RectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <ImageView
+        android:id="@+id/female_cInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="-258dp"
+        android:src="@drawable/female_profile" />
+
+    <TextView
+        android:id="@+id/CustomerName_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-265dp"
+        android:layout_toRightOf="@id/female_cInfo"
+        android:text="Customer Name :"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editCustomerName_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-265dp"
+        android:layout_toRightOf="@id/CustomerName_info"
+        android:hint="\''customer name\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!--    -->
+
+    <TextView
+        android:id="@+id/CustomerPhoneNumber_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerName_info"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/female_cInfo"
+        android:text="Phone Number :"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editCustomerPhoneNumber_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerName_info"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/CustomerPhoneNumber_info"
+        android:hint="\''Phone Number\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/kids_cInfo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/female_cInfo"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/children" />
+
+    <TextView
+        android:id="@+id/NumberOfKids_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerPhoneNumber_info"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/female_cInfo"
+        android:text="Number of Kids :"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editNumberOfKids_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerPhoneNumber_info"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/NumberOfKids_info"
+        android:hint="\''Number of Kids\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/PickUpSymbol_cInfo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/kids_cInfo"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pickup" />
+
+    <TextView
+        android:id="@+id/PickUpLocation_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NumberOfKids_info"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/female_cInfo"
+        android:text="Pick up location:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editPickUpLocation_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NumberOfKids_info"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/PickUpLocation_info"
+        android:hint="\''Pick up location\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/DestinationSymbol_cInfo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/PickUpSymbol_cInfo"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/destination" />
+
+    <TextView
+        android:id="@+id/Destination_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PickUpLocation_info"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/female_cInfo"
+        android:text="Destination:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editDestination_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PickUpLocation_info"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/Destination_info"
+        android:hint="\''Destination\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/pickUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Destination_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundstyle"
+        android:textColor="@color/black"
+        android:text="pick up" />
+
+</RelativeLayout>

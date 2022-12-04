@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+    <View
+        android:id="@+id/TopStyle1_signup"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/Bittersweet"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/TopStyle2_signup"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/profile_rect"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="129dp"
+        android:layout_below="@id/TopStyle2_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/safly" />
+
+    <TextView
+        android:id="@+id/joinUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="104dp"
+        android:text="Join us to have safe trips"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonSignUpRider"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/joinUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/roundstyle"
+        android:text="Sign up as Rider"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonSignUpDriver"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignUpRider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="106dp"
+        android:background="@drawable/roundstyle"
+        android:text="Sign up as Driver"
+        android:textColor="@color/black" />
+
+<!--    <View-->
+<!--        android:id="@+id/bottomStyle_signup"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginTop="720dp"-->
+<!--        android:background="@drawable/rectangll"-->
+<!--        android:backgroundTint="@color/Bittersweet"-->
+<!--        tools:layout_editor_absoluteX="49dp"-->
+<!--        tools:layout_editor_absoluteY="530dp" />-->
+
+    <View
+        android:id="@+id/bottomStyle2_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/Bittersweet"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+
+
+</RelativeLayout>

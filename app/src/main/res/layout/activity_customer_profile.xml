@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerProfile">
+
+    <View
+        android:id="@+id/TopStyle1_cProfile"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/Bittersweet"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+    <View
+        android:id="@+id/TopStyle2_cProfile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/profile_rect"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <ImageView
+        android:id="@+id/female_cProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        app:srcCompat="@drawable/female_profile" />
+
+    <TextView
+        android:id="@+id/ShowCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/female_cProfile"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Name "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowCustomerName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ShowCustomerPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerName"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="23dp"
+        android:text="Phone Number "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CustomerPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowCustomerPhoneNumber"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ShowCustomerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerPhoneNumber"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="23dp"
+        android:text="Email "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CustomerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowCustomerEmail"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <!--    cancel button to be   -->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/behindCancel_c"-->
+    <!--        android:layout_width="27dp"-->
+    <!--        android:layout_height="27dp"-->
+    <!--        android:layout_marginStart="42dp"-->
+    <!--        android:layout_marginTop="37dp"-->
+    <!--        app:srcCompat="@drawable/circle" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/cancelImage_c"-->
+    <!--        android:layout_width="52dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        app:srcCompat="@drawable/cancelbutton" />-->
+
+
+    <!--    bottom style   -->
+    <!--    <View-->
+    <!--        android:id="@+id/bottomStyle_signup"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="25dp"-->
+    <!--        android:layout_marginTop="720dp"-->
+    <!--        android:background="@drawable/rectangll"-->
+    <!--        android:backgroundTint="@color/Bittersweet"-->
+    <!--        tools:layout_editor_absoluteX="49dp"-->
+    <!--        tools:layout_editor_absoluteY="530dp" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/bottomStyle2_signup"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="700dp"-->
+    <!--        android:background="@drawable/rectangle"-->
+    <!--        android:backgroundTint="@color/Bittersweet"-->
+    <!--        tools:layout_editor_absoluteX="49dp"-->
+    <!--        tools:layout_editor_absoluteY="530dp" />-->
+
+
+
+</RelativeLayout>

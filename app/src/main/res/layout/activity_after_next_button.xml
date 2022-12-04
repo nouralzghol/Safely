@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    the maaaaaaaaapppppp-->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AfterNextButton">
+
+    </fragment>
+
+    <RelativeLayout
+        android:id="@+id/secondRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/tallerBox"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tallerbox" />
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/backArrow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:background="#00FFFFFF"-->
+        <!--            android:onClick="onClick"-->
+        <!--            android:src="@drawable/backarrow" />-->
+
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:layout_alignStart="@+id/tallerBox"
+            android:layout_alignTop="@+id/tallerBox"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/firstChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="First Child"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/firstChildName"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/child1Gender"
+                        style="?android:attr/spinnerDropDownItemStyle"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:entries="@array/gender" />
+
+                    <Spinner
+                        android:id="@+id/child1Age"
+                        style="?android:attr/spinnerDropDownItemStyle"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:entries="@array/ages" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/grayLine1"
+                    android:layout_width="270dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#99C0C0C0" />
+
+                <TextView
+                    android:id="@+id/secondChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Second Child (optional)"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/secondChildName"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/child2Gender"
+                        style="?android:attr/spinnerDropDownItemStyle"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:entries="@array/gender" />
+
+                    <Spinner
+                        android:id="@+id/child2Age"
+                        style="?android:attr/spinnerDropDownItemStyle"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:entries="@array/ages" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/grayLine2"
+                    android:layout_width="270dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#99C0C0C0" />
+
+                <CheckBox
+                    android:id="@+id/babysitting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Babysitting"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/charges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="*charges are 3 JD/hr ."
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/babysittingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="babysit the kids for:"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/babySittingHours"
+                    style="?android:attr/spinnerDropDownItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:entries="@array/hours" />
+
+                <View
+                    android:id="@+id/grayLine3"
+                    android:layout_width="270dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#99C0C0C0" />
+
+                <LinearLayout
+                    android:id="@+id/priceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="56dp">
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="Price: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/editPrice"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/calculateButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Calculate">
+                    </Button>
+                </LinearLayout>
+
+
+                <!--                <androidx.gridlayout.widget.GridLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    app:rowCount="1"-->
+                <!--                    app:columnCount="2">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/price"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="25dp"-->
+                <!--                        android:text="Price: "-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/calculateButton"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="100dp"-->
+                <!--                        android:text="Calculate">-->
+                <!--                    </Button>-->
+
+
+
+
+                <!--                </androidx.gridlayout.widget.GridLayout>-->
+
+                <Button
+                    android:id="@+id/confirmButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="confirm">
+
+                </Button>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

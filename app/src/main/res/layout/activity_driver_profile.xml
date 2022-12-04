@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverProfile">
+
+    <View
+        android:id="@+id/TopStyle1_dProfile"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/Bittersweet"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/TopStyle2_dProfile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/profile_rect"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+
+    <ImageView
+        android:id="@+id/female_dProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        app:srcCompat="@drawable/female_profile" />
+
+    <TextView
+        android:id="@+id/ShowDriverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/female_dProfile"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Name "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DriverName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowDriverName"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+         />
+
+    <TextView
+        android:id="@+id/ShowDriverPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverName"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="50dp"
+        android:text="Phone Number "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/DriverPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowDriverPhoneNumber"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <TextView
+        android:id="@+id/ShowDriverEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverPhoneNumber"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        android:text="E mail "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DriverEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowDriverEmail"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="50dp" />
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ratingBar2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ShowDriverRate"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="55dp" >-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/star_filled" />-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/star_filled" />-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/star_filled" />-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/star_filled" />-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/star_half" />-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/ShowDriverRate_dProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverEmail"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        android:text="Rate : "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editRate_dProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverEmail"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/ShowDriverRate_dProfile"
+        android:hint="4.5 "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+
+
+
+    <!--    cancel button to be   -->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/behindCancel_d"-->
+    <!--        android:layout_width="27dp"-->
+    <!--        android:layout_height="27dp"-->
+    <!--        android:layout_marginStart="42dp"-->
+    <!--        android:layout_marginTop="37dp"-->
+    <!--        app:srcCompat="@drawable/circle" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/cancelImage_d"-->
+    <!--        android:layout_width="52dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        app:srcCompat="@drawable/cancelbutton" />-->
+
+
+
+    <!--    bottom style     -->
+
+
+    <!--    <View-->
+    <!--        android:id="@+id/bottomStyle_dProfile"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="25dp"-->
+    <!--        android:layout_marginTop="720dp"-->
+    <!--        android:background="@drawable/rectangll"-->
+    <!--        android:backgroundTint="@color/Bittersweet"-->
+    <!--        tools:layout_editor_absoluteX="49dp"-->
+    <!--        tools:layout_editor_absoluteY="530dp" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/bottomStyle2_dProfile"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginTop="700dp"-->
+    <!--        android:background="@drawable/rectangle"-->
+    <!--        android:backgroundTint="@color/Bittersweet"-->
+    <!--        tools:layout_editor_absoluteX="49dp"-->
+    <!--        tools:layout_editor_absoluteY="530dp" />-->
+
+
+
+</RelativeLayout>

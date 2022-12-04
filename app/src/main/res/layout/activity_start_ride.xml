@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Cornflower_Lilac"
+    tools:context=".startRide">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".startRide" />
+
+    <View
+        android:id="@+id/roundedRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/RectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+
+    <TextView
+        android:id="@+id/CustomerName_startRide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="-200dp"
+        android:text="Customer Name :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editCustomerName_startRide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_alignTop="@id/CustomerName_startRide"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/CustomerName_startRide"
+        android:hint="\''Customer name\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/PhoneNumber_startRide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerName_startRide"
+        android:layout_alignStart="@id/CustomerName_startRide"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editPhoneNumber_startRide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerName_startRide"
+        android:layout_alignTop="@id/PhoneNumber_startRide"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/PhoneNumber_startRide"
+        android:hint="\''Phone number\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <View
+        android:id="@+id/bar1_startRide"
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/PhoneNumber_startRide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="#707070" />
+
+    <!--
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/msg" />
+    -->
+
+    <TextView
+        android:id="@+id/destName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar1_startRide"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/redCircle_startRide"
+        android:hint="\''Destination\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/redCircle_startRide"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/bar1_startRide"
+        android:layout_alignStart="@id/PhoneNumber_startRide"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/red_circle" />
+
+
+    <Button
+        android:id="@+id/endTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/destName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundstyle"
+        android:onClick="onClick"
+        android:text="End Trip"
+        android:textColor="@color/Red"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">task_1</string>
+    <string name="log_in_to_start_your_trips">Log in to start your trips</string>
+    <string name="title_activity_customer_home_page">Customer_HomePage</string>
+    <string name="title_activity_after_next_button">AfterNextButton</string>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="ages">
+        <item>2  </item>
+        <item>3  </item>
+        <item>4  </item>
+        <item>5  </item>
+        <item>6  </item>
+        <item>7  </item>
+        <item>8  </item>
+        <item>9  </item>
+        <item>10  </item>
+        <item>11  </item>
+        <item>12  </item>
+        <item>13  </item>
+    </string-array>
+
+    <string-array name="hours">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+    </string-array>
+    <string name="title_activity_driver_home_page">Driver_HomePage</string>
+    <string name="title_activity_customer_info_fd">CustomerInfoFD</string>
+    <string name="title_activity_driver_info_fc">DriverInfoFC</string>
+    <string name="title_activity_extra_home_page">ExtraHomePage</string>
+    <string name="title_activity_after_acceptance_drr">After_acceptance_drr</string>
+    <string name="title_activity_start_ride">startRide</string>
+    <string name="title_activity_end_trip">EndTrip</string>
+    <string name="title_activity_start_ride_customer_side">startRideCustomerSide</string>
+    <string name="title_activity_start_ride_customer">startRideCustomer</string>
+</resources>

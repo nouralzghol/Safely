@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_up_driver">
+
+
+    <View
+        android:id="@+id/TopStyle1_signup"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/Bittersweet"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/TopStyle2_signup"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/profile_rect"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/TopStyle2_signup"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-100dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/safly" />
+
+
+    <TextView
+        android:id="@+id/enterYourName_driver"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TopStyle2_signup"
+
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Enter Your Name :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/name_Driver"
+        android:layout_below="@id/enterYourName_driver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editTextFirstNameDriver"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/enterYourName_driver"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/Gray"
+            android:ems="10"
+            android:hint="   First name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextLastNameDriver"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/enterYourName_driver"
+            android:layout_toEndOf="@id/editTextFirstNameDriver"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/Gray"
+            android:ems="10"
+            android:hint="   Last name"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/enterPhoneNumber_driver"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/name_Driver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Enter Your Phone Number :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumberDriver"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/enterPhoneNumber_driver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/Gray"
+        android:ems="10"
+        android:inputType="none|phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPhoneNumber_driver" />
+
+    <TextView
+        android:id="@+id/textViewEmailDriver"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/editTextPhoneNumberDriver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Your Email:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextEmailDriver"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewEmailDriver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/Gray"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/editTextEmailDriver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Age (25 - 45) :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextAgeDriver"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/Gray"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/licenceExpDate"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/editTextAgeDriver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter licence expiry Date :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextLicenceExpDate"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/licenceExpDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/Gray"
+        android:ems="10"
+        android:inputType="date"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/enterPassword_driver"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/editTextLicenceExpDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Enter your password :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextPasswordDriver"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/enterPassword_driver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/Gray"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPasswordDriver"
+        android:layout_alignEnd="@id/editTextPasswordDriver"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundstyle"
+        android:text="Continue"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordDriver" />
+
+</RelativeLayout>

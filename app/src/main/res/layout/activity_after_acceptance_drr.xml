@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AfterAcceptanceDriver">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AfterAcceptanceDriver" />
+
+    <View
+        android:id="@+id/roundedRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/RectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <TextView
+        android:id="@+id/CustomerName_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-260dp"
+        android:text="Customer Name :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editCustomerName_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_alignTop="@id/CustomerName_AfterAcc"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/CustomerName_AfterAcc"
+        android:hint="\''Customer name\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/PhoneNumber_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerName_AfterAcc"
+        android:layout_alignStart="@id/CustomerName_AfterAcc"
+        android:layout_marginTop="9dp"
+        android:text="Phone Number :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editPhoneNumber_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerName_AfterAcc"
+        android:layout_alignTop="@id/PhoneNumber_AfterAcc"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/PhoneNumber_AfterAcc"
+        android:hint="\''Phone number\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/bar1"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/PhoneNumber_AfterAcc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#707070" />
+
+    <TextView
+        android:id="@+id/KidsInfo_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar1"
+        android:layout_alignStart="@id/CustomerName_AfterAcc"
+        android:layout_marginTop="8dp"
+        android:text="Kids Info :"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!--    Kid one info -->
+    <TextView
+        android:id="@+id/editKidOneName_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KidsInfo_AfterAcc"
+        android:layout_alignStart="@id/CustomerName_AfterAcc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="\''Kid 1 name\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/rightBracket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editKidOneName_AfterAcc"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/editKidOneName_AfterAcc"
+        android:alpha="1"
+        android:text="("
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editKidOneAge_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editKidOneName_AfterAcc"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/leftBracket2"
+        android:hint="\''age \''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/YearsOld1_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KidsInfo_AfterAcc"
+        android:layout_alignTop="@id/editKidOneName_AfterAcc"
+        android:layout_toRightOf="@id/editKidOneAge_AfterAcc"
+        android:text="years old)"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <!--   kid two info-->
+    <TextView
+        android:id="@+id/editKidTwoName_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editKidOneName_AfterAcc"
+        android:layout_alignStart="@id/CustomerName_AfterAcc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:alpha="1"
+        android:hint="\''Kid 2 name\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/leftBracket2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editKidTwoName_AfterAcc"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/editKidTwoName_AfterAcc"
+        android:alpha="1"
+        android:text="("
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editKidTwoAge_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editKidTwoName_AfterAcc"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/leftBracket2"
+        android:alpha="1"
+        android:hint="\''age \''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/YearsOld2_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YearsOld1_AfterAcc"
+        android:layout_alignTop="@id/editKidTwoName_AfterAcc"
+        android:layout_toRightOf="@id/editKidTwoAge_AfterAcc"
+        android:alpha="1"
+        android:text="years old)"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/bar2"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/YearsOld2_AfterAcc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#707070" />
+
+
+    <TextView
+        android:id="@+id/editPickUpLocation_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/greenCircle_AfterAcc"
+        android:hint="\''Pick up location\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editDestination_AfterAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPickUpLocation_AfterAcc"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/redCircle_AfterAcc"
+        android:hint="\''Destination\''"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/greenCircle_AfterAcc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/bar2"
+        android:layout_alignStart="@id/KidsInfo_AfterAcc"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/green_circle" />
+
+    <ImageView
+        android:id="@+id/redCircle_AfterAcc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/greenCircle_AfterAcc"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignStart="@id/KidsInfo_AfterAcc"
+        android:src="@drawable/red_circle" />
+
+    <Button
+        android:id="@+id/ButtonArrived"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/editDestination_AfterAcc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundstyle"
+        android:text="Arrived"
+        android:textColor="@color/Red"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

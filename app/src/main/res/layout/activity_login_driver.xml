@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_driver">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView3"-->
+    <!--        android:layout_width="697dp"-->
+    <!--        android:layout_height="693dp"-->
+    <!--        android:layout_marginStart="-60dp"-->
+    <!--        android:layout_marginTop="76dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/circle" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="99dp"-->
+    <!--        android:layout_marginStart="4dp"-->
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:scaleType="centerInside"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/safly" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/enterDriverEmail"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="73dp"-->
+    <!--        android:layout_marginTop="196dp"-->
+    <!--        android:text="Enter your Email :"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextDriverEmail"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginStart="60dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="51dp"-->
+    <!--        android:background="@drawable/roundstyle"-->
+    <!--        android:backgroundTint="@color/Gray"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/enterDriverEmail"-->
+    <!--        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/enterPassword_dlin"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="73dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:text="Enter your password :"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextDriverEmail" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextDriverPassword"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginStart="63dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginEnd="48dp"-->
+    <!--        android:background="@drawable/roundstyle"-->
+    <!--        android:backgroundTint="@color/Gray"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/enterPassword_dlin"-->
+    <!--        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/LoginDriverButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="272dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:layout_marginEnd="51dp"-->
+    <!--        android:background="@drawable/roundstyle"-->
+    <!--        android:text="Login"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextDriverPassword" />-->
+
+
+
+    <View
+        android:id="@+id/TopStyle1_signup"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/Bittersweet"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/TopStyle2_signup"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/profile_rect"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="129dp"
+        android:layout_below="@id/TopStyle2_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/safly" />
+
+    <TextView
+        android:id="@+id/enterDriverEmail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Enter your Email :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDriverEmail"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/enterDriverEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/Gray"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterDriverEmail"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/enterPassword_dlin"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDriverEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Enter your password :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDriverEmail" />
+
+    <EditText
+        android:id="@+id/editTextDriverPassword"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/enterPassword_dlin"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/Gray"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword_dlin"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/LoginDriverButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDriverPassword"
+        android:layout_marginStart="261dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundstyle"
+        android:text="Login"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDriverPassword" />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "463772214088",
+    "project_id": "gpsafely",
+    "storage_bucket": "gpsafely.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463772214088:android:084c74437f3f078c2fc97d",
+        "android_client_info": {
+          "package_name": "com.nouralzghoulpractice.safely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463772214088-ijrv2srncqdg1ng716e7jo8blt084vin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nouralzghoulpractice.safely",
+            "certificate_hash": "fd688674c9df59f255f28dd00542aa773baefbd5"
+          }
+        },
+        {
+          "client_id": "463772214088-sssilh60d0a0h8c4fto31mg5q7isve73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp3ng5QrsmDnAZRlL0MIqbU-Hfq52G3BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463772214088-sssilh60d0a0h8c4fto31mg5q7isve73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Cornflower_Lilac"
+    tools:context=".DriverInfoFC">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DriverInfoFC" />
+
+
+    <ImageView
+        android:id="@+id/roundedRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <View
+        android:id="@+id/RectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangll"
+        android:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/female_dInfo"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@+id/roundedRectangleView"-->
+<!--        android:layout_marginStart="14dp"-->
+<!--        android:layout_marginTop="-170dp"-->
+<!--        app:srcCompat="@drawable/female_profile" />-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints"
+        android:visibility="visible"
+
+        />
+
+
+    <TextView
+        android:id="@+id/DriverName_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-170dp"
+        android:layout_toRightOf="@id/female_dInfo"
+        android:text="Driver's name :"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/editDriverName_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-170dp"
+        android:layout_toRightOf="@id/DriverName_info"
+        android:hint="\''driver name\''"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/DriverAge_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-170dp"
+        android:layout_toRightOf="@id/editDriverName_info"
+        android:text="Age:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/editDriverAge_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-170dp"
+        android:layout_toRightOf="@id/DriverAge_info"
+        android:hint="\''age\''" />
+
+    <TextView
+        android:id="@+id/ShowDriverRate_dProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverAge_info"
+        android:layout_alignStart="@+id/DriverAge_info"
+        android:layout_marginTop="20dp"
+        android:text="Rate:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/editRate_dProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverAge_info"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/ShowDriverRate_dProfile"
+        android:hint=""
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <!--    -->
+
+    <TextView
+        android:id="@+id/DriverPhoneNumber_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverName_info"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/female_dInfo"
+        android:text="Phone Number :"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/editDriverPhoneNumber_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DriverName_info"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/DriverPhoneNumber_info"
+        android:hint="\''Phone Number\''"
+        android:textColor="@color/black" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/carView"-->
+<!--        android:layout_width="51dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_below="@id/female_dInfo"-->
+<!--        android:layout_marginStart="14dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        app:srcCompat="@drawable/carpink" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/carInfo_dInfo"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/DriverPhoneNumber_info"-->
+    <!--        android:layout_marginStart="100dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:hint="car name:" />-->
+
+    <TextView
+        android:id="@+id/carName_dInfo"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DriverPhoneNumber_info"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/female_dInfo"
+        android:hint="car name"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dash_dInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DriverPhoneNumber_info"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/carName_dInfo"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/carColor_dInfo"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DriverPhoneNumber_info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/dash_dInfo"
+        android:hint="car color"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/carNumber_dInfo"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DriverPhoneNumber_info"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toRightOf="@id/carColor_dInfo"
+        android:hint="car number"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/carpink"
+        android:layout_width="51dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/female_dInfo"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/female_dInfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/roundedRectangleView"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="-170dp"
+        android:src="@drawable/female_profile" />
+<!--
+    <ImageButton
+        android:id="@+id/msg"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/editDriverAge_info"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/editDriverPhoneNumber_info"
+        android:onClick="onClick"
+        android:src="@drawable/msg" />
+-->
+
+</RelativeLayout>
